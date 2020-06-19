@@ -43,6 +43,10 @@ android {
     androidExtensions {
         experimental = true
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -70,6 +74,5 @@ dependencies {
 
     // Retrofit with Scalar Converters
     implementation "com.squareup.retrofit2:retrofit:$version_retrofit"
-    implementation "com.squareup.retrofit2:converter-scalars:$version_retrofit"
-    implementation "com.squareup.retrofit2:converter-moshi:$version_converter_moshi"
+    implementation "com.squareup.retrofit2:converter-moshi:$version_retrofit"
 }
